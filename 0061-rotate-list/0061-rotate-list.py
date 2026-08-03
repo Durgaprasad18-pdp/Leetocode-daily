@@ -19,5 +19,5 @@ class Solution:
         for i in range(len(ans)):
             head.val = ans[i]
             head = head.next
-
-        return copy
+        head = copy
+        return head
