@@ -1,20 +1,12 @@
 class Solution:
     def isPalindrome(self, n: int) -> bool:
-        c = n
+        copy =n 
         rev = 0
-        #boundary case if number is less than 0, directly return False        
-        if n<0:
-            return False
-        while(n!=0):
-            r = n%10
+        while(n>0):
+            last = n%10
             n = n//10
-            rev = rev *10
-            rev = rev +r
-        if rev==c:
+            rev = (rev*10)+last
+        if rev==copy:
             return True
-        return False
-
-
-               
-             
+        return False        
         
